@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="آدرس مورد نظر شما"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="جستجو" />
+    </LinearLayout>
+
+    <!-- Line 13 bellow -->
+
+        <fragment
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            map:zOrderOnTop="true"
+            android:id="@+id/map_data"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent" />
+
+</LinearLayout>
